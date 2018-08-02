@@ -1,17 +1,17 @@
 <?
-$MESS["DEV2FUN_YZEN_PROP_IBLOCK_ID"] = "ID Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ° Ð¸Ð· ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ð±ÐµÑ€ÐµÐ¼ Ð´Ð°Ð½Ð½Ñ‹Ðµ";
-$MESS["DEV2FUN_YZEN_PROP_COUNT"] = "ÐšÐ¾Ð»-Ð²Ð¾ Ð²Ñ‹Ð²Ð¾Ð´Ð¸Ð¼Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²";
-$MESS["DEV2FUN_YZEN_PROP_CATEGORY"] = "ÐšÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ñ Ð¿Ñ€Ð¸Ð½Ð°Ð´Ð»ÐµÐ½Ð¾ÑÑ‚Ð¸ Ð´Ð°Ð½Ð½Ñ‹Ñ…";
-$MESS["DEV2FUN_YZEN_PROP_SORT_FIELD"] = "ÐŸÐ¾Ð»Ðµ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸";
-$MESS["DEV2FUN_YZEN_PROP_SORT_ORDER"] = "ÐŸÐ¾Ñ€ÑÐ´Ð¾Ðº ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸";
-$MESS["DEV2FUN_YZEN_PROP_FILTER_NAME"] = "Ð˜Ð¼Ñ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð°";
+$MESS["DEV2FUN_YZEN_PROP_IBLOCK_ID"] = "ID Èíôîáëîêà èç êîòîðîãî áåðåì äàííûå";
+$MESS["DEV2FUN_YZEN_PROP_COUNT"] = "Êîë-âî âûâîäèìûõ ýëåìåíòîâ";
+$MESS["DEV2FUN_YZEN_PROP_CATEGORY"] = "Êàòåãîðèÿ ïðèíàäëåíîñòè äàííûõ";
+$MESS["DEV2FUN_YZEN_PROP_SORT_FIELD"] = "Ïîëå ñîðòèðîâêè";
+$MESS["DEV2FUN_YZEN_PROP_SORT_ORDER"] = "Ïîðÿäîê ñîðòèðîâêè";
+$MESS["DEV2FUN_YZEN_PROP_FILTER_NAME"] = "Èìÿ ôèëüòðà";
 
-$MESS["DEV2FUN_YZEN_PROP_CREATED"] = "Ð”Ð°Ñ‚Ð° ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ";
-$MESS["DEV2FUN_YZEN_PROP_TIMESTAMP_X"] = "Ð”Ð°Ñ‚Ð° Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ";
-$MESS["DEV2FUN_YZEN_PROP_ACTIVE_FROM"] = "Ð”Ð°Ñ‚Ð° Ð°ÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚Ð¸";
-$MESS["DEV2FUN_YZEN_PROP_SORT"] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
-$MESS["DEV2FUN_YZEN_PROP_ID"] = "ID ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°";
+$MESS["DEV2FUN_YZEN_PROP_CREATED"] = "Äàòà ñîçäàíèÿ";
+$MESS["DEV2FUN_YZEN_PROP_TIMESTAMP_X"] = "Äàòà èçìåíåíèÿ";
+$MESS["DEV2FUN_YZEN_PROP_ACTIVE_FROM"] = "Äàòà àêòèâíîñòè";
+$MESS["DEV2FUN_YZEN_PROP_SORT"] = "Ñîðòèðîâêà";
+$MESS["DEV2FUN_YZEN_PROP_ID"] = "ID ýëåìåíòà";
 
 
-$MESS["DEV2FUN_YZEN_PROP_ASC"] = "ÐŸÐ¾ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸ÑŽ";
-$MESS["DEV2FUN_YZEN_PROP_DESC"] = "ÐŸÐ¾ ÑƒÐ±Ñ‹Ð²Ð°Ð½Ð¸ÑŽ";
+$MESS["DEV2FUN_YZEN_PROP_ASC"] = "Ïî âîçðàñòàíèþ";
+$MESS["DEV2FUN_YZEN_PROP_DESC"] = "Ïî óáûâàíèþ";

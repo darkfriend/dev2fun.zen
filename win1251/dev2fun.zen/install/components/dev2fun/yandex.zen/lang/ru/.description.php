@@ -1,3 +1,3 @@
 <?
-$MESS["DEV2FUN_YZEN_NAME"] = "Ð¯Ð½Ð´ÐµÐºÑ.Ð”Ð·ÐµÐ½ RSS";
-$MESS["DEV2FUN_YZEN_DESCRIPTION"] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ RSS-Ð»ÐµÐ½Ñ‚Ñƒ Ð´Ð»Ñ Ð¯Ð½Ð´ÐµÐºÑ.Ð”Ð·ÐµÐ½";
+$MESS["DEV2FUN_YZEN_NAME"] = "ßíäåêñ.Äçåí RSS";
+$MESS["DEV2FUN_YZEN_DESCRIPTION"] = "Âûâîäèò RSS-ëåíòó äëÿ ßíäåêñ.Äçåí";

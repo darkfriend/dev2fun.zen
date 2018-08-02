@@ -71,13 +71,13 @@ Class dev2fun_zen extends CModule
 	}
 
     public function installComponent() {
-		if(!CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/local/modules/{$this->MODULE_ID}/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true)) {
+		if(!CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/{$this->MODULE_ID}/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true)) {
 			throw new Exception(Loc::getMessage("ERRORS_INSTALL_COMPONENT"));
 		}
 	}
 
 	public function installRssScript() {
-		if(!CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/local/modules/{$this->MODULE_ID}/install/yandex.zen", $_SERVER["DOCUMENT_ROOT"].'/yandex.zen')) {
+		if(!CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/{$this->MODULE_ID}/install/yandex.zen", $_SERVER["DOCUMENT_ROOT"].'/yandex.zen')) {
 			throw new Exception(Loc::getMessage("ERRORS_INSTALL_RSS_SCRIPT"));
 		}
 	}

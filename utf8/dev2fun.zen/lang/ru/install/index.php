@@ -7,7 +7,7 @@ $MESS["D2F_YANDEXZEN_INSTALL_LAST_MSG"] = "<b>Будем благодарны п
 $MESS["D2F_YANDEXZEN_INSTALL_SUCCESS"] = 'Модуль успешно установлен';
 
 $MESS["ERRORS_INSTALL_COMPONENT"] = 'Ошибка! Не получилось скопировать компонент dev2fun:yandex.zen';
-$MESS["ERRORS_INSTALL_RSS_SCRIPT"] = 'Ошибка! Не получилось скопировать скрипт dev2fun.rss.zen.php';
+$MESS["ERRORS_INSTALL_RSS_SCRIPT"] = 'Ошибка! Не получилось скопировать папку install/yandex.zen';
 $MESS["ERRORS_UNINSTALL_COMPONENT"] = 'Ошибка! Не получилось удалить компонент dev2fun:yandex.zen';
-$MESS["ERRORS_UNINSTALL_RSS_SCRIPT"] = 'Ошибка! Не получилось удалить скрипт dev2fun.rss.zen.php';
+$MESS["ERRORS_UNINSTALL_RSS_SCRIPT"] = 'Ошибка! Не получилось удалить папку install/yandex.zen';
 ?>
