@@ -9,6 +9,11 @@
 /** @global CUser $USER */
 /** @global CMain $APPLICATION */
 
+/**
+ * @author darkfriend <hi@darkfriend.ru>
+ * @version 1.0.1
+ */
+
 use Bitrix\Main\Context,
 	Bitrix\Main\Type\DateTime,
 	Bitrix\Main\Loader,
@@ -137,10 +142,10 @@ if($obCache->initCache($arParams["CACHE_TIME"],$cacheId,$cachePath)){
 		}
 
 		$arItem["DETAIL_PAGE_URL"] = $this->getAbsoluteUrl($arItem["DETAIL_PAGE_URL"]);
-		if($arItem["DETAIL_PAGE_URL"]) {
-			$utm = Dev2funYandexZen::getUTM($arItem["NAME"]);
-			if($utm) $arItem["DETAIL_PAGE_URL"] .= '?'.$utm;
-		}
+//		if($arItem["DETAIL_PAGE_URL"]) {
+//			$utm = Dev2funYandexZen::getUTM($arItem["NAME"]);
+//			if($utm) $arItem["DETAIL_PAGE_URL"] .= '?'.$utm;
+//		}
 
 		if(!empty($arItem["DATE_CREATE"])) {
 			$arItem["DATE_CREATE"] = (new \DateTime($arItem["DATE_CREATE"]))->format('D, d M y H:i:s O');
