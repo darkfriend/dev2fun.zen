@@ -11,7 +11,7 @@
 
 /**
  * @author darkfriend <hi@darkfriend.ru>
- * @version 1.0.1
+ * @version 1.0.2
  */
 
 use Bitrix\Main\Context,
@@ -124,8 +124,21 @@ if($obCache->initCache($arParams["CACHE_TIME"],$cacheId,$cachePath)){
 			'IPROPERTY_VALUES'
 		);
 
+    $arItem["MEDIA"] = [];
+		if(!empty($arItem['DETAIL_PICTURE'])) {
+      $arItem["MEDIA"][] = [
+        'url' => $this->getAbsoluteUrl($arItem['DETAIL_PICTURE']['SRC']),
+        'type' => $arItem['DETAIL_PICTURE']['CONTENT_TYPE'],
+      ];
+    } elseif(!empty($arItem['PREVIEW_PICTURE'])) {
+      $arItem["MEDIA"][] = [
+        'url' => $this->getAbsoluteUrl($arItem['PREVIEW_PICTURE']['SRC']),
+        'type' => $arItem['PREVIEW_PICTURE']['CONTENT_TYPE'],
+      ];
+    }
+
 		if(!empty($arItem["DETAIL_TEXT"])) {
-			$arItem["MEDIA"] = $this->getMedia($arItem["DETAIL_TEXT"]);
+			$arItem["MEDIA"] = array_merge($arItem["MEDIA"],$this->getMedia($arItem["DETAIL_TEXT"]));
 			$arItem["DETAIL_TEXT"] = $this->getTextZenFormat($arItem["DETAIL_TEXT"]);
 			$arItem["DETAIL_TEXT"] = $this->clearExcess($arItem["DETAIL_TEXT"]);
 			$arItem["DETAIL_TEXT"] = strip_tags($arItem["DETAIL_TEXT"],$arParams["ALLOW_TAGS"]);
