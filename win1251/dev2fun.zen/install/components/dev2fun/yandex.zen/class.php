@@ -1,9 +1,8 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: darkfriend <hi@darkfriend.ru>
- * Date: 27.07.2018
- * Time: 23:09
+ * @author darkfriend <hi@darkfriend.ru>
+ * @copyright dev2fun
+ * @version 1.0.3
  */
 
 class Dev2funYandexZenComponent extends CBitrixComponent {
@@ -96,7 +95,7 @@ class Dev2funYandexZenComponent extends CBitrixComponent {
 	public function getMedia($content){
 		$arMedia = array();
 		preg_match_all("#(<img[\s\S]*>)#U", $content, $matches);
-		if(empty($matches[0])) return $content;
+		if(empty($matches[0])) return $arMedia;
 		foreach ($matches[0] as $key=>$value) {
 			if(preg_match('#src=[\'"](.*?)[\'"]#',$value,$match)){
 				$arMedia[$key]["url"] = $this->getAbsoluteUrl($match[1]);

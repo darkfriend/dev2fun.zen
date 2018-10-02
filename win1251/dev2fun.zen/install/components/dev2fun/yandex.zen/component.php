@@ -8,10 +8,9 @@
 /** @global CDatabase $DB */
 /** @global CUser $USER */
 /** @global CMain $APPLICATION */
-
 /**
  * @author darkfriend <hi@darkfriend.ru>
- * @version 1.0.2
+ * @version 1.0.4
  */
 
 use Bitrix\Main\Context,
@@ -93,9 +92,11 @@ if($obCache->initCache($arParams["CACHE_TIME"],$cacheId,$cachePath)){
 		if(!empty($arParams['SORT_ORDER'])) {
 			$arSort[$arParams['SORT_FIELD']] = $arParams['SORT_ORDER'];
 		} else {
-			$arSort[$arParams['SORT_FIELD']] = 'ASC';
+			$arSort[$arParams['SORT_FIELD']] = 'asc';
 		}
-	}
+	} else {
+    $arSort['created'] = 'desc';
+  }
 
 	$rsElement = CIBlockElement::GetList(
 		$arSort,
@@ -161,7 +162,7 @@ if($obCache->initCache($arParams["CACHE_TIME"],$cacheId,$cachePath)){
 //		}
 
 		if(!empty($arItem["DATE_CREATE"])) {
-			$arItem["DATE_CREATE"] = (new \DateTime($arItem["DATE_CREATE"]))->format('D, d M y H:i:s O');
+			$arItem["DATE_CREATE"] = (new \DateTime($arItem["DATE_CREATE"]))->format('D, d M Y H:i:s O');
 		}
 
 		$arResult['ITEMS'][] = $arItem;

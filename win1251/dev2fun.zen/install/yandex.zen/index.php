@@ -9,7 +9,7 @@ $APPLICATION->SetTitle("Yandex.Zen RSS");
 		"COUNT" => "100",
 		"FILTER_NAME" => "",
 		"IBLOCK_ID" => array(),
-		"SORT_FIELD" => "timestamp_x",
+		"SORT_FIELD" => "created",
 		"SORT_ORDER" => "desc"
 	)
 );?>
