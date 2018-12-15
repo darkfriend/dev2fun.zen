@@ -23,6 +23,9 @@ $APPLICATION->RestartBuffer();
 if(empty($arParams["CACHE_TIME"]))
 	$arParams["CACHE_TIME"] = 3600*2;
 
+if(!isset($arParams["ADDITIONAL_FIELD"]))
+	$arParams["ADDITIONAL_FIELD"] = array();
+
 $obCache = Bitrix\Main\Data\Cache::createInstance();
 $cachePath = '/dev2fun.zen/'.SITE_ID.'/';
 $cacheId = 'dev2fun.yandex.zen_'.SITE_ID;
@@ -69,22 +72,25 @@ if($obCache->initCache($arParams["CACHE_TIME"],$cacheId,$cachePath)){
 	}
 
 
-	$arSelect = array(
-		"ID",
-		"NAME",
-		"IBLOCK_ID",
-		"IBLOCK_SECTION_ID",
-		"DETAIL_TEXT",
-		"DETAIL_TEXT_TYPE",
-		"PREVIEW_TEXT",
-		"PREVIEW_TEXT_TYPE",
-		"DETAIL_PICTURE",
-		"PREVIEW_PICTURE",
-		"TIMESTAMP_X",
-		"ACTIVE_FROM",
-		"LIST_PAGE_URL",
-		"DETAIL_PAGE_URL",
-		"DATE_CREATE",
+	$arSelect = array_merge(
+		array(
+			"ID",
+			"NAME",
+			"IBLOCK_ID",
+			"IBLOCK_SECTION_ID",
+			"DETAIL_TEXT",
+			"DETAIL_TEXT_TYPE",
+			"PREVIEW_TEXT",
+			"PREVIEW_TEXT_TYPE",
+			"DETAIL_PICTURE",
+			"PREVIEW_PICTURE",
+			"TIMESTAMP_X",
+			"ACTIVE_FROM",
+			"LIST_PAGE_URL",
+			"DETAIL_PAGE_URL",
+			"DATE_CREATE",
+		),
+		$arParams["ADDITIONAL_FIELD"]
 	);
 
 	$arSort = array();
